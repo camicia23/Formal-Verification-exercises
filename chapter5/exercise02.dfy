@@ -38,10 +38,6 @@ module Obligations {
     forall i:nat,j:nat | i < j < |v.hosts| :: (if v.hosts[j].ParticipantVariables?
                                                then (v.hosts[i].participant.decision.Some? && v.hosts[j].participant.decision.Some? ==> v.hosts[i].participant.decision == v.hosts[j].participant.decision)
                                                else (v.hosts[i].participant.decision.Some? && v.hosts[j].coordinator.decision.Some? ==> v.hosts[i].participant.decision == v.hosts[j].coordinator.decision))
-    // forall i:nat,j:nat | i < j < |v.hosts| :: v.hosts[i].participant.decision.Some? ==>
-    //                                             (if v.hosts[j].ParticipantVariables?
-    //                                              then (v.hosts[j].participant.decision.Some? ==> v.hosts[i].participant.decision == v.hosts[j].participant.decision)
-    //                                              else (v.hosts[j].coordinator.decision.Some? ==> v.hosts[i].participant.decision == v.hosts[j].coordinator.decision))
     /*}*/
   }
 

@@ -32,8 +32,6 @@ module TwoPCInvariantProof {
     if Last(v.hosts).coordinator.decision.None?
     then (forall i:nat | i < |v.hosts|-1 :: v.hosts[i].participant.decision.Some? ==> v.hosts[i].participant.decision == Some(Abort))
     else (forall i:nat | i < |v.hosts|-1 :: v.hosts[i].participant.decision.Some? ==> v.hosts[i].participant.decision == Last(v.hosts).coordinator.decision)
-
-    // && (forall i:nat | i < |v.hosts|-1 :: (v.hosts[i].participant.decision.Some? && Last(v.hosts).coordinator.decision.Some? ==> v.hosts[i].participant.decision == Last(v.hosts).coordinator.decision))
   }
 
 
