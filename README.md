@@ -15,12 +15,10 @@ This repository covers the fundamentals of formal verification using the **Dafny
     - Inductive invariants, strengthening
 - 📚 **Chapter 5: Distributed State Machines**
     - Network models, asynchrony
-- 📚 **Chapter 6: Refinement**
-    - Abstraction layers
-
 - 🏆 **Project 1: Distributed Lock Server**
     - Safety proofs, asynchronous token passing, epoch-based consistency
-
+- 📚 **Chapter 6: Refinement**
+    - Abstraction layers
 - 🏆 **Project 2: Sharded Key-Value Store**
     - Refinement proofs, disjoint memory modeling
 
